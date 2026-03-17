@@ -16,5 +16,13 @@
     "express": "^5.2.1",
     "mongoose": "^9.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitrajput1528/WhisperMark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ankitrajput1528/WhisperMark/issues"
+  },
+  "homepage": "https://github.com/ankitrajput1528/WhisperMark#readme"
 }
