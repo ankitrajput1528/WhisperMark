@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Checkout | WhisperMark</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f5f5f5;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.logo:visited, .logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 32px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FF5A1F;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:40px;
+background:white;
+margin-top:60px;
+border-radius:10px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+}
+
+button{
+background:#FF5A1F;
+border:none;
+padding:12px;
+width:100%;
+color:white;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="WhisperMark Logo">
+    <span>WhisperMark</span>
+  </a>
+  <nav>
+    <a href="index.html">Shop</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+
+<h2>Checkout</h2>
+
+<input placeholder="Full Name">
+
+<input placeholder="Phone Number">
+
+<input placeholder="Address">
+
+<input placeholder="City">
+
+<button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<script>
+
+function placeOrder(){
+
+localStorage.removeItem("cart")
+
+alert("Order placed successfully!")
+
+window.location.href="index.html"
+
+}
+
+</script>
+
+</body>
+</html>
